@@ -1,0 +1,4 @@
+Mi nombre es Matias Perez Jazbec.
+Tengo 42 años y trabajo como desarrollador PHP en una empresa que desarrolla herramientas de gestion de RRHH.
+Me inscribí porque quiero obtener mas conocimientos, ya que estoy trabajando en desarrollo hace solamente 3 meses.
+También me anoté en el curso de GO. 
