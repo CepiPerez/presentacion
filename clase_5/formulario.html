@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primer Sitio Web</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="formulario.html">Formulario</a></li>
+          <li><a href="videos.html">Youtube</a></li>
+          <li><a href="ubicacion.html">Ubicacion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Formulario</h1>
+      <hr><br>
+      <form action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" />
+        <br><br>
+        <label for="email">Correo electronico:</label>
+        <input type="email" name="email" id="email"/>
+        <br><br>
+        <label for="clave">Contraseña:</label>
+        <input type="password" name="clave" id="clave"/>
+        <br><br>
+        <label>Sexo</label>
+        <input type="radio" name="sexo" id="masculino"/>
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="femenino" />
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="sexo" id="otro" />
+        <label for="otro">Otro</label>
+        <br><br>
+        <label for="civil">Estado civil:</label>
+        <select id="civil">
+          <option value="casado">Casado</option>
+          <option value="soltero">Soltero</option>
+          <option value="divorciado">Divorciado</option>
+          <option value="viudo">Viudo</option>
+        </select>
+        <br><br>
+        <label>Intereses</label>
+        <input type="checkbox" name="intereses[]" id="cine"/>
+        <label for="cine">Cine</label>
+        <input type="checkbox" name="intereses[]" id="videojuegos" />
+        <label for="videojuegos">Videojuegos</label>
+        <input type="checkbox" name="intereses[]" id="deportes" />
+        <label for="deportes">Deportes</label>
+        <br><br>
+        <input type="button" value="Enviar">
+        <input type="reset" value="Limpiar">
+      </form>
+      
+
+
+    </section>
+
+    <footer>
+      <p>(c) 2022 Matias Perez - <a href="mailto:cepiperez@gmail.com">cepiperez@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
