@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body class="p-0 m-0">
+
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div id="navbar" class="container-fluid">
+            <img src="images/codoacodo.png" alt="" height="50">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav align-items-end ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#carousel-primario">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#lugar">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ser-orador">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="formulario" class="container mt-4">
+
+        <div class="row gap-2 mx-1">
+            
+            <div class="col-sm border border-2 border-primary p-2">
+                <div class="d-grid text-center mt-3 gap-2">
+                    <p class="fs-4">Estudiante</p>
+                    <p>Tienen un descuento</p>
+                    <p><strong>80%</strong></p>
+                    <p class="text-secondary"><small>* presentar documentacion</small></p>
+                </div>
+            </div>
+
+            <div class="col-sm border border-2 border-info p-2">
+                <div class="d-grid text-center mt-3 gap-2">
+                    <p class="fs-4">Trainee</p>
+                    <p>Tienen un descuento</p>
+                    <p><strong>50%</strong></p>
+                    <p class="text-secondary"><small>* presentar documentacion</small></p>
+                </div>
+            </div>
+
+            <div class="col-sm border border-2 border-warning p-2">
+                <div class="d-grid text-center mt-3 gap-2">
+                    <p class="fs-4">Junior</p>
+                    <p>Tienen un descuento</p>
+                    <p><strong>15%</strong></p>
+                    <p class="text-secondary"><small>* presentar documentacion</small></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center pt-3">
+            <p class="fs-6">VENTA<br><span class="fs-3">VALOR DE TICKET $200</span></p>
+        </div>
+
+        <form action="" method="post" class="d-grid gap-3 pb-4">
+            <div class="row">
+                 <div class="col-sm pb-3">
+                     <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                 </div>
+                 <div class="col-sm">
+                    <input type="text" class="col-sm form-control" name="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <input type="email" class="form-control" name="correo" placeholder="Correo">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="cantidad" class="pb-2">Cantidad</label>
+                    <input type="number" class="form-control" name="cantidad" id="cantidad" min="1">
+                </div>
+                <div class="col-sm">
+                    <label for="categoria" class="pb-2">Categoria</label>
+                    <select class="form-select" name="categoria" id="categoria">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card rounded bg-info pt-3 ps-3">
+                <p class="fs-5" id="total">Total a pagar: $</p>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <input class="mb-3 w-100 py-2 btn btn-success" id="limpiar" type="reset">
+                </div>
+                <div class="col-sm">
+                    <button id="calcular" class="w-100 py-2 btn btn-success">Resumen</button>
+                </div>
+            </div>
+            
+        </form>
+
+
+    </div>
+
+
+    <footer id="footer" class="container-fluid d-flex justify-content-center">
+        <div class="row m-3">
+            <a class="col text-center" href="#">Preguntas frecuentes</a>
+            <a class="col text-center" href="#">Contáctanos</a>
+            <a class="col text-center" href="#">Prensa</a>
+            <a class="col text-center" href="#">Conferencias</a>
+            <a class="col text-center" href="#">Términos y condiciones</a>
+            <a class="col text-center" href="#">Privacidad</a>
+            <a class="col text-center" href="#">Estudiantes</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        //var a = document.getElementById("calcular");
+
+        document.getElementById("calcular").addEventListener('click', function(e) {
+            e.preventDefault();
+            let cant = document.getElementById("cantidad");
+
+            if (cant.value<1) cant.value = 1;
+
+            var seleccion = document.getElementById("categoria").value;
+            console.log(seleccion)
+
+            let descuento = seleccion=='estudiante'? 80 : (seleccion=='trainee'? 50 : 15);
+
+            console.log("descuento: "+descuento+"%")
+            let total = (200 * cant.value) - ( (200 * cant.value)/100 * descuento );
+
+            console.log("TOTAL: "+total)
+
+            document.getElementById("total").innerHTML = "Total a pagar: $"+total;
+            
+        });
+
+        document.getElementById("limpiar").addEventListener('click', function(e) {
+            document.getElementById("total").innerHTML = "Total a pagar: $";
+        });
+    </script>
+</body>
+</html>
