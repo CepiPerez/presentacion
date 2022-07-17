@@ -2,7 +2,7 @@
 
     session_start();
 
-    $error = false;
+    $error = null;
 
     if ($_POST)
     {
@@ -12,8 +12,6 @@
         $msg = wordwrap($msg,70);
         
         $error = mail("cepiperez@gmail.com", "Mensaje enviado desde el sitio web", $msg);
-
-
     }
 
     include('views/header.php'); 
@@ -39,7 +37,7 @@
 
                 <div class="row">
                     <p class="col text-warning" style="font-weight:600;">
-                        <?php echo ($error? "Error al enviar el mensaje!" : "Mensaje enviado!"); ?>
+                        <?php echo (isset($error)? ($error? "Error al enviar el mensaje!" : "Mensaje enviado!") : ''); ?>
                     </p>
                     <div class="col text-right">
                         <button type="submit" class="btn btn-big btn-primary">Enviar</button>
